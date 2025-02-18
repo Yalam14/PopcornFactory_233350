@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DetallePelicula">
+
+    <!-- Imagen de la película -->
+    <ImageView
+        android:id="@+id/iv_pelicula_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bones" />
+
+    <!-- Nombre de la película -->
+    <TextView
+        android:id="@+id/tv_nombre_pelicula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BONES"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="8dp"/>
+
+    <!-- Descripción de la película -->
+    <TextView
+        android:id="@+id/tv_pelicula_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do..."
+        android:textSize="18sp"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>
