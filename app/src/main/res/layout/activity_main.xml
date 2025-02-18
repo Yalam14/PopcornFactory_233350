@@ -3,27 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/black_background"
     tools:context=".MainActivity">
 
-    <!-- GridLayout existente -->
-    <GridLayout
-        android:id="@+id/gridView"
-        android:columnCount="3"
+    <GridView
+        android:id="@+id/gridview"
+        android:numColumns="3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:orientation="horizontal"/>
+        android:layout_height="match_parent" >
 
-    <!-- RecyclerView agregado -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerPeliculas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_pelicula"/>
+
+    </GridView>
 
 </LinearLayout>
